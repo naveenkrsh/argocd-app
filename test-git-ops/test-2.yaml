@@ -7,7 +7,7 @@ spec:
   destination:
     namespace: naveen
     server: 'https://kubernetes.default.svc'
-  project: test-2
+  project: test-git-ops
   source:
     path: guestbook
     repoURL: 'https://github.com/naveenkrsh/argocd-example-apps.git'
