@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: test-2
+  namespace: argocd
+spec:
+  destination:
+    namespace: naveen
+    server: 'https://kubernetes.default.svc'
+  project: test-2
+  source:
+    path: guestbook
+    repoURL: 'https://github.com/naveenkrsh/argocd-example-apps.git'
+    targetRevision: HEAD
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+
