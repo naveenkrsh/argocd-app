@@ -9,7 +9,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   project: test-git-ops
   source:
-    path: tekton
+    path: tasks
     repoURL: 'https://github.com/naveenkrsh/tekton-pipelines.git'
     targetRevision: HEAD
   syncPolicy:
